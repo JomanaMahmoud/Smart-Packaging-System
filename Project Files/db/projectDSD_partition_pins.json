@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "enable_outA",
+					"strict" : false
+				},
+				{
+					"name" : "enable_outB",
+					"strict" : false
+				},
+				{
+					"name" : "alert",
+					"strict" : false
+				},
+				{
+					"name" : "seven_segment_display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_segment_display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_segment_display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_segment_display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_segment_display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_segment_display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seven_segment_display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "worker_near",
+					"strict" : false
+				},
+				{
+					"name" : "magnetic_sensor",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

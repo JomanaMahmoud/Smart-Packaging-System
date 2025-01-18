@@ -1,0 +1,43 @@
+|projectDSD
+clk => prev_Reset.CLK
+clk => product_count[0].CLK
+clk => product_count[1].CLK
+clk => product_count[2].CLK
+clk => prev_magnetic_sensor.CLK
+clk => working_belt.CLK
+clk => alert~reg0.CLK
+clk => pwm_counter[0].CLK
+clk => pwm_counter[1].CLK
+clk => pwm_counter[2].CLK
+clk => pwm_counter[3].CLK
+clk => pwm_counter[4].CLK
+clk => pwm_counter[5].CLK
+clk => pwm_counter[6].CLK
+clk => pwm_signal.CLK
+in1 <= <VCC>
+in2 <= <GND>
+in3 <= <VCC>
+in4 <= <GND>
+enable_outA <= enable_outA.DB_MAX_OUTPUT_PORT_TYPE
+enable_outB <= enable_outB.DB_MAX_OUTPUT_PORT_TYPE
+alert <= alert~reg0.DB_MAX_OUTPUT_PORT_TYPE
+worker_near => alert~reg0.DATAIN
+magnetic_sensor => process_1.IN1
+magnetic_sensor => prev_magnetic_sensor.DATAIN
+magnetic_sensor => process_1.IN1
+seven_segment_display[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seven_segment_display[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seven_segment_display[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seven_segment_display[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seven_segment_display[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seven_segment_display[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seven_segment_display[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Reset => prev_Reset.ACLR
+Reset => product_count[0].ACLR
+Reset => product_count[1].ACLR
+Reset => product_count[2].ACLR
+Reset => prev_magnetic_sensor.ACLR
+Reset => working_belt.PRESET
+Reset => alert~reg0.ACLR
+
+
