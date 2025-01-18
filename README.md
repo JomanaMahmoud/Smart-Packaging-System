@@ -61,8 +61,35 @@ This project was proudly presented at the **2024 Embedded Systems Fair** and rec
 For inquiries or collaboration opportunities, please reach out to us via:
 
 - **Email**: jomanatantawy42@gmail.com 📧  
-- **GitHub**: https://github.com/JomanaMahmoud 💻  
-- **LinkedIn**: https://www.linkedin.com/in/jomana-tantawy-b516b0315/ 🌐  
+- **GitHub**: [JomanaMahmoud](https://github.com/JomanaMahmoud) 💻  
+- **LinkedIn**: [Jomana Tantawy](https://www.linkedin.com/in/jomana-tantawy-b516b0315/) 🌐  
 
 This project leverages an FPGA board for implementing control logic and ensuring precise automation. 🖥️🎯
 
+---
+
+## 🏁 How to Run on Quartus
+
+To get your **Smart Packaging System** up and running on **Quartus** (the FPGA development environment), follow these simple steps:
+
+### 1. **Install Quartus** 💻
+   - Download and install the **Quartus Prime** software from the [Intel website](https://www.intel.com/content/www/us/en/programmable/downloads/download-center.html). Choose the appropriate version for your operating system.
+
+### 2. **Create a New Project** 🛠️
+   - Open **Quartus** and click on **File > New Project Wizard**.
+   - Follow the on-screen instructions to create a new project. Select the FPGA device you're working with (e.g., **Cyclone IV**).
+
+### 3. **Add Your Files** 📂
+   - Add the necessary **VHDL** or **Verilog** files for your control logic. These files implement the automation logic for the conveyor belt and sensors.
+   - You can also add any **constraint files** for setting pin assignments based on your FPGA board.
+
+### 4. **Compile Your Project** 🏗️
+   - Click on **Processing > Start Compilation** to compile your project. Make sure there are no errors in the output.
+
+### 5. **Program the FPGA** 🔌
+   - Connect your FPGA board to your computer via the USB-Blaster programmer.
+   - Click on **Tools > Programmer** and select your FPGA device.
+   - Click on **Start** to upload the compiled design to your FPGA.
+
+### 6. **Test the System** 🧪
+   - Once the FPGA is programmed, observe the **conveyor belt**, **7-segment display**, and **sensors**. The system should now be fully operational, with the product count, belt control, and worker detection functioning automatically.
