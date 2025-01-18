@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity projectDSD is
+    Port (
+       -- clk        : in  STD_LOGIC; -- Clock signal 
+        enable     : in  STD_LOGIC; -- Enable signal  --ely dkhla fl fpga (switch)    
+        pwm        : in  STD_LOGIC; -- PWM signal --speed
+        in1        : out STD_LOGIC; -- Control signal for L298N IN1 --dir
+        in2        : out STD_LOGIC; -- Control signal for L298N IN2 --dir
+        enable_out : out STD_LOGIC  -- Control signal for L298N EN --ely b
+    );
+end projectDSD;
+
+architecture Behavioral of projectDSD is
+begin
+    process(enable,pwm)
+    begin
+        --if rising_edge(clk) then
+            if enable = '1' then
+                enable_out <= pwm; -- Control speed via PWM
+                    in1 <= '1';
+                    in2 <= '0'; -- Forward direction)
+            else
+                enable_out <= '0'; -- Disable motor
+                in1 <= '0';
+                in2 <= '0';
+            end if;
+       -- end if;
+     end process;
+end Behavioral;

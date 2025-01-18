@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Project1 is
+port(A,B,C: in std_logic; 
+F: out std_logic);
+end project1;
+
+architecture arch of project1 is
+begin
+F<= (Not A and not B) or C;
+end arch;
